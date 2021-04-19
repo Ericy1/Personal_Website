@@ -1,0 +1,65 @@
+@font-face {
+        src: url(../fonts/SourceSansPro-Regular.ttf);
+        font-family: Source Sans Pro Regular;
+}
+@font-face {
+        src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+        font-family: Source Sans Pro ExtraLight;
+}
+
+/* index styling */
+body {
+        margin: 0;
+        padding: 0;
+        background: #0b0b0b;
+}
+
+header {
+        text-align: right;
+        /* padding: 30px;
+        top: 10px;
+        left: 50%; */
+        font-size: 0.8em;
+}
+
+.typedArea h1 {
+        font-family: Source Sans Pro ExtraLight;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: 2em;
+        color: #fff;
+}
+
+.typedArea h1 span {
+        text-decoration: underline;
+}
+
+li {
+        display:inline-block;
+}
+
+li a {
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-family: Source Sans Pro ExtraLight;
+        font-weight: lighter;
+        font-size: 25px;
+        padding: 0 20px;
+}
+
+.underlined-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width, .3s;
+}
+
+.underlined-link:hover::after {
+        width: 100%;
+        transition: width .3s;
+}
