@@ -1,46 +1,109 @@
+<!--Change these to the right website links later
+                https://www.ericyyang.com (this is home technically)
+                https://www.ericyyang.com/about
+                https://www.ericyyang.com/work
+                https://www.ericyyang.com/resume
+                https://www.ericyyang.com/photography
+                https://www.ericyyang.com/contact -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
         <title>Eric Yang</title>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <link rel="shortcut icon" href="../Logo.png" />
+        <link rel="stylesheet" href="../fontawesome/css/all.css"/>
+        <link rel="shortcut icon" href="../Logo.png"/>
 </head>
 <body>
-        <header>
-                <!--Change these to the right website links later
-                        https://www.ericyyang.com (this is home technically)
-                        https://www.ericyyang.com/about
-                        https://www.ericyyang.com/work
-                        https://www.ericyyang.com/resume
-                        https://www.ericyyang.com/photography
-                        https://www.ericyyang.com/contact
-                -->
-                <ul>
-                        <li><a href="index.html" class="underlined-link">About</a></li>
+        <!--Navigation Bar-->
+        <nav>
+                <div id="logo"><a href="index.html"><img src="../Logo.png" alt="Logo"></a></div>
+                <div id="openMenu"><em class="fa fa-bars"></em></div>
+
+                <ul id="mainMenu">
                         <li><a href="work.html" class="underlined-link">Work</a></li>
                         <li><a href="resume.html" class="underlined-link">Resume</a></li>
-                        <li><a href="photography.html" class="underlined-link">Photography</a></li>
+                        <li><a href="photography.html" class="underlined-link1">Photography</a></li>
                         <li><a href="contact.html" class="underlined-link">Contact</a></li>
+                        <div id="closeMenu"><em class="fa fa-times"></em></div>
                 </ul>
-        </header>
-        <div class="typedArea">
+        </nav>
+
+        <!--Middle Area-->
+        <div class="typedJSArea">
                 <h1>Hey! I'm Eric and I'm a <span class="type"></span></h1>
         </div>
 
+        <div class="spacing"></div>
+        <!--Scroll Down Text-->
+        <section class="scrollDown">
+                <span></span>
+                <span></span>
+                <span></span>
+        </section>
+
+        <section class="scrollSection">
+                <h1>About Me</h1>
+                <p1>My name is Eric, and I'm a rising Junior studying Computer 
+                    Science at Rice University (Graduating Fall 2022). I'm 
+                    passionate about anything software related, particularly
+                    within the aerospace/defense industry. </p1>
+
+                <p1>Last summer I worked under NASA's ESSCA contract with 
+                    Jacobs to design automation testing for Orion SLS test runs.
+                    The Orion Space Launch System (SLS) is the most powerful
+                    rocket humanity has ever developed and will put humans 
+                    back on the surface of the Moon.</p1>
+
+                <!--Add NASA gradient or something behind the word?-->
+                <p1>This summer I will be working with NASA to design and test
+                    software for an novel, optical communications terminal that 
+                    will communicate with spacecraft from LEO to lunar orbit.
+                    I'll be using Python and HTTP sockets to calibrate/configure
+                    the ground terminal, Docker to support orchestration of 
+                    software components, RabbitMQ for software interfacing, and
+                    a variety of frameworks for a user configurable UI for the 
+                    ground station.
+                </p1>
+
+                <!--Change the color of specific words?-->
+                <p1>
+                    In my free time I love to improve my photography skills, capturing 
+                    mainly landscape, nature, and night-sky scenes (feel free to
+                    check out some of my photos!) I've also been speedcubing 
+                    since 2012, which is the sport where you solve combination 
+                    puzzles like the Rubik's Cube as fast as possible. I'm 
+                    currently ranked top 400 in the world out of more than 
+                    140,000 competitors.
+                    </p1>
+        </section>
+        <section class="scrollSection2">
+                <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsam quia error temporibus magni natus eum vel 
+                        distinctio possimus quos velit hic cupiditate animi 
+                        consectetur, deleniti odit quaerat facere nulla illo?</p1>
+        </section>
+        
+        <!--Scripts-->
+        <script src = "../js/app.js"></script>
         <script src = "../js/typed.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
                 var typed = new Typed('.type', {
-                        strings: ['Student^500',
-                                  'Developer^500', 
-                                  'Photographer^500'],
-                        typeSpeed: 75,
-                        backSpeed: 75,
+                        strings: ['Student^1000',
+                                  'Developer^1000', 
+                                  'Photographer^1000',
+                                  'Speedcuber^1000'],
+                        typeSpeed: 65,
+                        backSpeed: 65,
+                        showCursor: false,
                         loop: true
                 });
-        </script>>
+        </script>
 </body>
 </html>
