@@ -40,25 +40,22 @@
         </div>
 
         <div class="spacing"></div>
-        <!--Scroll Down Text-->
-        <section class="scrollDown">
-                <span></span>
-                <span></span>
-                <span></span>
-        </section>
+        
+        <!--Scroll Down Icon-->
+        <div id="scrollDown"></div>
 
-        <section class="scrollSection">
+        <!--Second Section-->
+        <section id="scrollSection">
                 <h1>About Me</h1>
                 <p1>My name is Eric, and I'm a rising Junior studying Computer 
                     Science at Rice University (Graduating Fall 2022). I'm 
                     passionate about anything software related, particularly
-                    within the aerospace/defense industry. </p1>
+                    within the space industry. </p1>
 
-                <p1>Last summer I worked under NASA's ESSCA contract with 
-                    Jacobs to design automation testing for Orion SLS test runs.
-                    The Orion Space Launch System (SLS) is the most powerful
-                    rocket humanity has ever developed and will put humans 
-                    back on the surface of the Moon.</p1>
+                <p1>Last summer I worked with Jacobs to automate the testing 
+                    of Orion SLS test runs. The Orion Space Launch System (SLS)
+                    is the most powerful rocket humanity has ever developed 
+                    and will put humans back on the surface of the Moon!</p1>
 
                 <!--Add NASA gradient or something behind the word?-->
                 <p1>This summer I will be working with NASA to design and test
@@ -67,8 +64,8 @@
                     I'll be using Python and HTTP sockets to calibrate/configure
                     the ground terminal, Docker to support orchestration of 
                     software components, RabbitMQ for software interfacing, and
-                    a variety of frameworks for a user configurable UI for the 
-                    ground station.
+                    a variety of frameworks to design a user configurable ground 
+                    station UI.
                 </p1>
 
                 <!--Change the color of specific words?-->
@@ -104,6 +101,17 @@
                         showCursor: false,
                         loop: true
                 });
+        </script>
+
+        <script>
+                window.onscroll=testScroll
+                function testScroll(){
+                        if(window.pageYOffset > 50) {
+                                document.getElementById("scrollDown").style.display = "none";
+                        } else {
+                                document.getElementById("scrollDown").style.display = "block";
+                        }
+                }
         </script>
 </body>
 </html>
