@@ -9,13 +9,13 @@
 
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" href="../fontawesome/css/all.css"/>
-        <link rel="shortcut icon" href="../Logo.png"/>
+        <link rel="shortcut icon" href="../other-images/Logo.png"/>
 
 </head>
 <body>
         <!--Navigation Bar-->
         <nav>
-                <div id="logo"><a href="index.html"><img src="../Logo.png" alt="Logo"></a></div>
+                <div id="logo"><a href="index.html"><img src="../other-images/Logo.png" alt="Logo"></a></div>
                 <div id="openMenu"><em class="fa fa-bars"></em></div>
 
                 <ul id="mainMenu">
@@ -27,22 +27,26 @@
                 </ul>
         </nav>
 
+        <iframe title="iframe" name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
         <!--Contact Form-->
-        <div class="contactContainer">
+        <form id="contactContainer" target="hidden_iframe" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3mnrbLhQbNNkOa8mQ6mbV9ibNF-usbD8WxGTWcNHDhObIIw/formResponse"
+              method="post" onsubmit="return formSubmitted()">
                 <h2>I'm glad to stay in touch! Feel free to fill out the form, reach out on 
                     social media, or email me at <u>ericy@rice.edu.</u></h2>
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox">
-                                        <input type="text" name="" required="required">
+                                        <input required name="entry.1112098759" type="text" name="">
                                         <span class="text">Name</span>
                                         <span class="line"></span>
                                 </div>
                         </div>
                         <div class="col">
                                 <div class="inputBox">
-                                        <input type="text" name="" required="required">
-                                        <span class="text">Email Address</span>
+                                        <input required name="entry.1325859121" type="text" name="" 
+                                               id="email" onkeyup="validation()">
+                                        <span class="text">Email <span id="IMGSPOT"></span> <span id="invalidText"></span></span>
                                         <span class="line"></span>
                                 </div>
                         </div>
@@ -50,7 +54,7 @@
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox">
-                                        <input type="text" name="" required="required">
+                                        <input required name="entry.787066033" type="text" name="">
                                         <span class="text">Subject</span>
                                         <span class="line"></span>
                                 </div>
@@ -59,8 +63,8 @@
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox textarea">
-                                        <textarea required="required"></textarea>
-                                        <span class="text">Message...</span>
+                                        <textarea required name="entry.1074379012"></textarea>
+                                        <span class="text">Message</span>
                                         <span class="line"></span>
                                 </div>
                         </div>
@@ -70,9 +74,36 @@
                                 <input type="submit" value="Send">
                         </div>
                 </div>
-        </div>
+        </form>
 
         <!--Scripts-->
         <script src = "../js/app.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script>
+                function validation() {
+                        var form = document.getElementById("contactContainer");
+                        var email = document.getElementById("email").value;
+                        var invalidText = document.getElementById("invalidText");
+                        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+                        if (email.match(pattern)) {
+                                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/valid.png>";
+                                invalidText.innerHTML = "(Valid Email Address)";
+                                invalidText.style.color = "#00ff00";
+                        } else {
+                                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/invalid.png>";
+                                invalidText.innerHTML = "(Invalid Email Address!)";
+                                invalidText.style.color = "#ff0000";
+                        }
+                }
+        </script>
+
+        <script>
+                function formSubmitted() {
+                        sweetAlert("Success!", "You'll hear back from me soon!", "success");
+                }
+        </script>
+
 </body>
 </html>

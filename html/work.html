@@ -12,12 +12,12 @@ Laboratory-->
 
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" href="../fontawesome/css/all.css"/>
-        <link rel="shortcut icon" href="../Logo.png"/>
+        <link rel="shortcut icon" href="../other-images/Logo.png"/>
 </head>
 <body>
         <!--Navigation Bar-->
         <nav>
-                <div id="logo"><a href="index.html"><img src="../Logo.png" alt="Logo"></a></div>
+                <div id="logo"><a href="index.html"><img src="../other-images/Logo.png" alt="Logo"></a></div>
                 <div id="openMenu"><em class="fa fa-bars"></em></div>
 
                 <ul id="mainMenu">
@@ -30,7 +30,7 @@ Laboratory-->
         </nav>
 
         <section id="about">
-                <h1>My Experience at NASA</h1>
+                <h1>My Experience at NASA<br></h1>
                 <p1>
                         This summer I will be working with NASA to design and 
                         test software for an novel, optical communications 
@@ -39,15 +39,30 @@ Laboratory-->
                         to calibrate/configure the ground terminal, Docker to 
                         support orchestration of software components, RabbitMQ
                         for software interfacing, and a variety of frameworks
-                        to design a user configurable ground station UI.
+                        to design a user configurable ground station UI. <br><br>
                 </p1>
-                <h1>My Experience at Jacobs</h1>
+                <h1>My Experience at Jacobs<br></h1>
                 <p1>
-                        
+                        • NASA Space Launch System - Artemis I<br>
+                        • Automated flight telemetry analysis for the Interim 
+                          Cryogenic Propulsion Stage and Multi-Purpose Crew Vehicle
+                          of the Orion SLS rocket with Python to ensure nominal 
+                          performance of tens of thousands of telemetry events. <br>
+                        • Designed the automation framework to work on any future
+                          test run and development cycle. <br>
+                        • Resulted in >10x speedup of pre-delivery beta testing times.<br><br>
                 </p1>
-        </section>
-        <section id="whoIWorkedWith">
                 <h1>Who I've worked with</h1>
+                <div class="images">
+                        <img src="../other-images/nasa.png" alt = "nasa"id="nasa">
+                        <img src="../other-images/jacobs.jpg" alt = "jacobs" id="jacobs">
+                        <img src="../other-images/llnl.png" alt = "llnl" id="llnl">
+                </div>
+                </section>
         </section>
+
+        <!--Scripts-->
+        <script src = "../js/app.js"></script>
+
 </body>
 </html>
