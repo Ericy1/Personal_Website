@@ -26,24 +26,26 @@
                 </ul>
         </nav>
 
+        <!--Prevent google sheets form from opening-->
         <iframe title="iframe" name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
         <!--Contact Form-->
-        <form id="contactContainer" target="hidden_iframe" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3mnrbLhQbNNkOa8mQ6mbV9ibNF-usbD8WxGTWcNHDhObIIw/formResponse"
+        <form id="contactContainer" target="hidden_iframe" 
+              action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe3mnrbLhQbNNkOa8mQ6mbV9ibNF-usbD8WxGTWcNHDhObIIw/formResponse"
               method="post" onsubmit="return formSubmitted()">
                 <h2>I'm glad to stay in touch! Feel free to fill out the form, reach out on 
                     social media, or email me at <u>ericy@rice.edu.</u></h2>
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox">
-                                        <input required name="entry.1112098759" type="text" name="">
+                                        <input required name="entry.1112098759" type="text" name="Name">
                                         <span class="text">Name</span>
                                         <span class="line"></span>
                                 </div>
                         </div>
                         <div class="col">
                                 <div class="inputBox">
-                                        <input required name="entry.1325859121" type="text" name="" 
+                                        <input required name="entry.1325859121" type="text" name="Email" 
                                                id="email" onkeyup="validation()">
                                         <span class="text">Email <span id="IMGSPOT"></span> <span id="invalidText"></span></span>
                                         <span class="line"></span>
@@ -79,6 +81,7 @@
         <script src = "../js/app.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+        <!--Email validation script-->
         <script>
                 function validation() {
                         var form = document.getElementById("contactContainer");
@@ -98,11 +101,14 @@
                 }
         </script>
 
+        <!--Sweet Alert and reset on form submission-->
         <script>
                 function formSubmitted() {
+                        document.getElementById("contactContainer").reset();
+                        document.getElementById("IMGSPOT").innerHTML = '';
+                        invalidText.style.color = "transparent";
                         sweetAlert("Success!", "You'll hear back from me soon!", "success");
                 }
         </script>
-
 </body>
 </html>

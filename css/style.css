@@ -19,6 +19,7 @@
         scrollbar-width: none;  /* Firefox */
 }
 
+/* Universal styling */
 * {
         box-sizing: border-box;
         margin: 0;
@@ -36,17 +37,16 @@ body {
 .spacing {
         height: 100vh;
 }
+
 /* Navigation Styling */
 nav {
         display: flex;
         justify-content: space-between;
 }
-
 nav #mainMenu {
         display: flex;
         list-style: none;
 }
-
 nav #mainMenu li a {
         margin: 22px;
         padding: 10px;
@@ -57,7 +57,6 @@ nav #mainMenu li a {
         font-weight: lighter;
         font-size: 1.5rem;
 }
-
 nav #mainMenu .underlined-link1 {
         background: linear-gradient(to right, #f32170, #ffeb07);
         -webkit-text-fill-color: transparent;
@@ -65,20 +64,17 @@ nav #mainMenu .underlined-link1 {
                 background-clip: text;
         text-shadow: 0 0 10px #0b0b0b;
 }
-
 nav #openMenu {
         font-size: 2rem;
         margin: 30px;
         display: none;
         cursor: pointer;
 }
-
 nav #mainMenu #closeMenu, .icons i {
         font-size: 2rem;
         display: none;
         cursor: pointer; 
 }
-
 nav #logo img{
         max-height:65px;
         max-width:65px;
@@ -86,7 +82,6 @@ nav #logo img{
         left: 25px;
         cursor: pointer;
 }
-
 @media(max-width: 750px) {
         nav #mainMenu {
                 height: 100vh;
@@ -125,12 +120,10 @@ nav #logo img{
         background: #fff;
         transition: width, .3s;
 }
-
 .underlined-link:hover::after {
         width: 100%;
         transition: width .3s;
 }
-
 .underlined-link1::after {
         content: '';
         display: block;
@@ -139,7 +132,6 @@ nav #logo img{
         background: linear-gradient(to right, #f32170, #ffeb07);
         transition: width, .3s;
 }
-
 .underlined-link1:hover::after {
         width: 100%;
         transition: width .3s;
@@ -155,7 +147,6 @@ nav #logo img{
         transform: translateX(-50%) translateY(-50%);
         font-size: 2.5em;
 }
-
 .typedJSArea h1 .type {
         text-decoration: underline;
         background: linear-gradient(to right, #f32170, #ffeb07);
@@ -175,7 +166,6 @@ nav #logo img{
         bottom: 10px;
         border-radius: 50px;
 }
-
 #scrollDown::before,
 #scrollDown::after {
         content: "";
@@ -191,7 +181,6 @@ nav #logo img{
         border-left: transparent;
         animation: scrollDown 1.3s ease-in-out infinite;
 }
-
 #scrollDown::before {
         top: 20%;
         animation-delay: 0.3s;
@@ -219,13 +208,11 @@ nav #logo img{
         text-align: center;
         justify-content: center;
 }
-
 #scrollSection h1 {
         font-size: 2.4rem;
         width: 100%;
         font-family: Source Sans Pro Regular;
 }
-
 #scrollSection p1 {
         display: flex;
         font-size: 1.7rem;
@@ -241,27 +228,23 @@ nav #logo img{
         margin: 70px 20%;
         padding: 20px;
 }
-
 #contactContainer h2 {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
 }
-
 #contactContainer h2 u{
         background: linear-gradient(to right, #f32170, #ffeb07);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
                 background-clip: text;
 }
-
 #contactContainer .row100 {
         position: relative;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
-
 #contactContainer .row100 .col {
         position: relative;
         width: 100%;
@@ -269,13 +252,11 @@ nav #logo img{
         margin: 40px 0 10px;
         transition: 0.5s;
 }
-
 #contactContainer .row100 .inputBox {
         position: relative;
         width: 100%;
         height: 40px;
 }
-
 #contactContainer .row100 .inputBox input,
 #contactContainer .row100 .inputBox.textarea textarea {
         position: absolute;
@@ -291,7 +272,6 @@ nav #logo img{
         color: #fff;
         font-family: Source Sans Pro Regular;
 }
-
 #contactContainer .row100 .inputBox .text {
         position: absolute;
         top: 0;
@@ -304,13 +284,11 @@ nav #logo img{
         pointer-events: none;
         font-family: Source Sans Pro Regular;
 }
-
 #contactContainer .row100 .inputBox input:focus + .text,
 #contactContainer .row100 .inputBox input:valid + .text {
         top: -35px;
         left: -10px;
 }
-
 #contactContainer .row100 .inputBox .line {
         position: absolute;
         bottom: 0;
@@ -322,40 +300,38 @@ nav #logo img{
         border-radius: 2px;
         pointer-events: none;
 }
-
 #contactContainer .row100 .inputBox input:focus ~ .line,
 #contactContainer .row100 .inputBox input:valid ~ .line {
         height: 100%;
 }
-
 #contactContainer .row100 .inputBox.textarea {
         position: relative;
         width: 100%;
         height: 100px;
         padding: 10px 0;
 }
-
 #contactContainer .row100 .inputBox.textarea textarea {
         height: 100%;
         resize: none;
 }
-
 #contactContainer .row100 .inputBox textarea:focus + .text,
 #contactContainer .row100 .inputBox textarea:valid + .text {
         top: -35px;
         left: -10px;
 }
-
 #contactContainer .row100 .inputBox textarea:focus ~ .line,
 #contactContainer .row100 .inputBox textarea:valid ~ .line {
         height: 100%;
 }
-
 #contactContainer .row100 .inputBox .manImg {
         width: 18px;
         padding: 0 2px;
 }
-
+#contactContainer .row100 .inputBox #invalidText {
+        font-size: 18px;
+        font-family: Source Sans Pro Regular;
+}
+/* Form submit */
 input[type="submit"] {
         padding: 7px 35px;
         cursor: pointer;
@@ -367,20 +343,16 @@ input[type="submit"] {
         font-size: 18px;
         transition: 0.6s;
 }
-
 input[type="submit"]:hover{ 
         background: linear-gradient(to right, #f32170, #F5425E);       
 }
 
-#contactContainer .row100 .inputBox #invalidText {
-        font-size: 18px;
-        font-family: Source Sans Pro Regular;
-}
-
+/* Valid/Invalid image */
 #IMGSPOT {
         max-width: 20px;
 }
 
+/* About section */
 #about {
         margin: 50px;
         height: 94vh;
@@ -389,22 +361,18 @@ input[type="submit"]:hover{
         justify-content: center;
         font-size: 24px;
 }
-
 #about p1 {
         display: flex;
         margin: 10px 10%;
         font-family: Source Sans Pro ExtraLight;
 }
-
 #about h1 {
         margin: 20px 10%;
         font-family: Source Sans Pro Regular;
 }
-
 #whoIveWorkedWith h1 {
         font-size: 24px;
 }
-
 .images {
         display: flex;
         justify-content: center;
@@ -415,13 +383,11 @@ input[type="submit"]:hover{
         max-height:150px;
         max-width:150px;
 }
-
 #jacobs{
         margin: 20px;
         max-height:180px;
         max-width:180px;
 }
-
 #llnl{
         margin: 20px;
         max-height:250px;
