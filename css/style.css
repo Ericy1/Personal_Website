@@ -88,7 +88,7 @@ nav #logo img{
                 position: fixed;
                 top: 0;
                 right: 0;
-                left: 0;
+                left: 0px;
                 z-index: 10;
                 flex-direction: column;
                 justify-content: center;
@@ -100,7 +100,7 @@ nav #logo img{
                 display: block;
                 position: absolute;
                 top: 30px;
-                right: 34px;
+                right: 30px;
         }
         nav #openMenu {
                 display: block;
