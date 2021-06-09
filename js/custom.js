@@ -1,10 +1,10 @@
 particlesJS("bg", {
     "particles":{
         "number":{
-            "value":300,
+            "value":250,
             "density":{
                 "enable":true,
-                "value_area":800
+                "value_area":500
             }
         },
         "color":{
@@ -55,7 +55,7 @@ particlesJS("bg", {
             "move":{
                 "enable":true,
                 "speed":0.3,
-                "direction":"none",
+                "direction":"top-right",
                 "random":true,
                 "straight":false,
                 "out_mode":"out",
