@@ -441,15 +441,15 @@ input[type="submit"]:hover{
     top: 0px;
     right: 80px;
     left: initial;
-    animation-duration: 12s;
+    animation-duration: 8s;
     z-index: -1;
 }
 .shootingstars:nth-child(2)
 {
-    top: 0px;
+    top: 220px;
     right: 0px;
     left: initial;
-    animation-duration: 8s;
+    animation-duration: 15s;
     z-index: -1;
 }
 .shootingstars:nth-child(3)
@@ -457,34 +457,26 @@ input[type="submit"]:hover{
     top: 0px;
     right: 180px;
     left: initial;
-    animation-duration: 6.66s;
+    animation-duration: 20s;
     z-index: -1;
 }
 .shootingstars:nth-child(4)
 {
     top: 0px;
-    right: 400px;
+    right: 330px;
     left: initial;
-    animation-duration: 10s;
+    animation-duration: 14s;
     z-index: -1;
 }
 .shootingstars:nth-child(5)
 {
     top: 0px;
-    right: 600px;
+    right: 500px;
     left: initial;
-    animation-duration: 11.56s;
+    animation-duration: 10s;
     z-index: -1;
 }
 .shootingstars:nth-child(6)
-{
-    top: 0px;
-    right: 500px;
-    left: initial;
-    animation-duration: 7s;
-    z-index: -1;
-}
-.shootingstars:nth-child(7)
 {
     top: 0px;
     right: 700px;
@@ -492,7 +484,7 @@ input[type="submit"]:hover{
     animation-duration: 6.2s;
     z-index: -1;
 }
-.shootingstars:nth-child(8)
+.shootingstars:nth-child(7)
 {
     top: 0px;
     right: 1000px;
@@ -500,31 +492,31 @@ input[type="submit"]:hover{
     animation-duration: 9s;
     z-index: -1;
 }
-.shootingstars:nth-child(9)
+.shootingstars:nth-child(8)
 {
     top: 0px;
-    right: 450px;
+    right: 840px;
     left: initial;
-    animation-duration: 8.8s;
+    animation-duration: 22s;
     z-index: -1;
 }
-.shootingstars:nth-child(10)
+.shootingstars:nth-child(9)
 {
     top: 400px;
     right: 450px;
     left: 100%;
-    animation-duration: 7.8s;
+    animation-duration: 7s;
     z-index: -1;
 }
-.shootingstars:nth-child(11)
+.shootingstars:nth-child(10)
 {
     top: 700px;
     right: 450px;
     left: 100%;
-    animation-duration: 7.56s;
+    animation-duration: 17s;
     z-index: -1;
 }
-.shootingstars:nth-child(12)
+.shootingstars:nth-child(11)
 {
     top: 0px;
     right: 100px;
