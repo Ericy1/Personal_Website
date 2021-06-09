@@ -4,7 +4,7 @@ particlesJS("bg", {
             "value":180,
             "density":{
                 "enable":true,
-                "value_area":350
+                "value_area":400
             }
         },
         "color":{
@@ -41,7 +41,7 @@ particlesJS("bg", {
                 "anim":{
                     "enable":true,
                     "speed":1,
-                    "size_min":0.5,
+                    "size_min":0.3,
                     "sync":false
                 }
             },
@@ -94,8 +94,8 @@ particlesJS("bg", {
                     "speed":3
                 },
                 "repulse":{
-                    "distance":200,
-                    "duration":0.4
+                    "distance":100,
+                    "duration":0.3
                 },
                 "push":{
                     "particles_nb":4

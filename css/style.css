@@ -562,14 +562,6 @@ input[type="submit"]:hover{
     animation-duration: 17s;
     z-index: -1;
 }
-.shootingstars:nth-child(10)
-{
-    top: 0px;
-    right: 100px;
-    left: 12%;
-    animation-duration: 16s;
-    z-index: -1;
-}
 
 #bg
 {
