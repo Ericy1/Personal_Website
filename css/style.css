@@ -333,6 +333,57 @@ nav #logo img{
         font-size: 18px;
         font-family: Source Sans Pro Regular;
 }
+
+.socials {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials a {
+    font-size: 20px;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: .4s linear;
+}
+.socials a+a {
+    margin-left: 20px;
+}
+.socials a::before, .socials a::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 40px;
+    height: 100%;
+    left: 10px;
+    top: 0;
+    transition: 0.4s linear;
+}
+.socials a:hover {
+    transform: scale(0.75);
+    background-image: linear-gradient(to right, #f32170, #ffeb07);
+    -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+                background-clip: text;
+}
+.socials a:hover::before {
+    border-left: 2px solid;
+    border-right: 2px solid;
+    transform: skewX(20deg);
+    border-image: linear-gradient(to right, #f32170, #ffeb07);
+    border-image-slice: 1;
+
+}
+.socials a:hover::after {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    transform: skewY(-20deg);
+    border-image: linear-gradient(to right, #f32170, #ffeb07);
+    border-image-slice: 1;
+}
+
 /* Form submit */
 input[type="submit"] {
         padding: 7px 35px;
@@ -409,6 +460,9 @@ input[type="submit"]:hover{
     0 0 0 8px rgba(255,255,255,0.1),
     0 0 20px rgba(255,255,255,1);
     animation: animate 3s linear infinite;
+    /* Following two lines are for 1 time comets, if that looks better*/
+    /* animation-iteration-count: 1;
+    opacity: 0; */
     z-index: -1;
 }
 .shootingstars::before{
@@ -463,20 +517,12 @@ input[type="submit"]:hover{
 .shootingstars:nth-child(4)
 {
     top: 0px;
-    right: 330px;
-    left: initial;
-    animation-duration: 14s;
-    z-index: -1;
-}
-.shootingstars:nth-child(5)
-{
-    top: 0px;
     right: 500px;
     left: initial;
     animation-duration: 10s;
     z-index: -1;
 }
-.shootingstars:nth-child(6)
+.shootingstars:nth-child(5)
 {
     top: 0px;
     right: 700px;
@@ -484,7 +530,7 @@ input[type="submit"]:hover{
     animation-duration: 6.2s;
     z-index: -1;
 }
-.shootingstars:nth-child(7)
+.shootingstars:nth-child(6)
 {
     top: 0px;
     right: 1000px;
@@ -492,7 +538,7 @@ input[type="submit"]:hover{
     animation-duration: 9s;
     z-index: -1;
 }
-.shootingstars:nth-child(8)
+.shootingstars:nth-child(7)
 {
     top: 0px;
     right: 840px;
@@ -500,7 +546,7 @@ input[type="submit"]:hover{
     animation-duration: 22s;
     z-index: -1;
 }
-.shootingstars:nth-child(9)
+.shootingstars:nth-child(8)
 {
     top: 400px;
     right: 450px;
@@ -508,7 +554,7 @@ input[type="submit"]:hover{
     animation-duration: 7s;
     z-index: -1;
 }
-.shootingstars:nth-child(10)
+.shootingstars:nth-child(9)
 {
     top: 700px;
     right: 450px;
@@ -516,7 +562,7 @@ input[type="submit"]:hover{
     animation-duration: 17s;
     z-index: -1;
 }
-.shootingstars:nth-child(11)
+.shootingstars:nth-child(10)
 {
     top: 0px;
     right: 100px;
