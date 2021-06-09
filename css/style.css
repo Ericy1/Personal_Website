@@ -40,6 +40,7 @@ body {
 
 /* Navigation Styling */
 nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
 }
@@ -146,6 +147,7 @@ nav #logo img{
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         font-size: 2.5em;
+        z-index: 3;
 }
 .typedJSArea h1 .type {
         background: linear-gradient(to right, #f32170, #ffeb07);
@@ -377,18 +379,152 @@ input[type="submit"]:hover{
         justify-content: center;
         align-items: center;
 }
-#nasa{
+#nasa {
         margin: 20px;
         max-height:150px;
         max-width:150px;
 }
-#jacobs{
+#jacobs {
         margin: 20px;
         max-height:180px;
         max-width:180px;
 }
-#llnl{
+#llnl {
         margin: 20px;
         max-height:250px;
         max-width:250px;
+}
+
+/* Shooting Stars */
+.shootingstars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+    z-index: -1;
+}
+.shootingstars::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 0.45;
+    }
+    70%
+    {
+        opacity: 0.45;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-1300px);
+        opacity: 0;
+    }
+}
+.shootingstars:nth-child(1)
+{
+    top: 0px;
+    right: 80px;
+    left: initial;
+    animation-duration: 6s;
+}
+.shootingstars:nth-child(2)
+{
+    top: 0px;
+    right: 0px;
+    left: initial;
+    animation-duration: 4s;
+}
+.shootingstars:nth-child(3)
+{
+    top: 0px;
+    right: 180px;
+    left: initial;
+    animation-duration: 3.33s;
+}
+.shootingstars:nth-child(4)
+{
+    top: 0px;
+    right: 400px;
+    left: initial;
+    animation-duration: 5s;
+}
+.shootingstars:nth-child(5)
+{
+    top: 0px;
+    right: 600px;
+    left: initial;
+    animation-duration: 5.78s;
+}
+.shootingstars:nth-child(6)
+{
+    top: 0px;
+    right: 500px;
+    left: initial;
+    animation-duration: 3.5s;
+}
+.shootingstars:nth-child(7)
+{
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-duration: 3.1s;
+}
+.shootingstars:nth-child(8)
+{
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-duration: 4.5s;
+}
+.shootingstars:nth-child(9)
+{
+    top: 0px;
+    right: 450px;
+    left: initial;
+    animation-duration: 4.4s;
+}
+.shootingstars:nth-child(10)
+{
+    top: 400px;
+    right: 450px;
+    left: 100%;
+    animation-duration: 3.9s;
+}
+.shootingstars:nth-child(11)
+{
+    top: 700px;
+    right: 450px;
+    left: 100%;
+    animation-duration: 3.78s;
+}
+.shootingstars:nth-child(12)
+{
+    top: 0px;
+    right: 100px;
+    left: 12%;
+    animation-duration: 8s;
+}
+
+#bg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
