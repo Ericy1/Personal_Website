@@ -162,7 +162,6 @@ nav #logo img{
 #scrollDown {
         height: 50px;
         width: 30px;
-        border: 1px solid transparent;
         position: absolute;
         left: 49%;
         bottom: 10px;
@@ -175,7 +174,9 @@ nav #logo img{
         justify-content: center;
         top: 20%;
         left: 50%;
-        border: 1px solid #fff;
+        border: 1px solid ;
+        border-image: linear-gradient(to right, #f32170, #ffeb07);
+        border-image-slice: 1;
         height: 10px;
         width: 10px;
         transform: translate(-50%, -100%) rotate(45deg);
@@ -218,7 +219,7 @@ nav #logo img{
 #scrollSection p1 {
         display: flex;
         font-size: 1.7rem;
-        margin: 20px 20%;
+        margin: 40px 20%;
         font-family: Source Sans Pro ExtraLight;
 }
 
@@ -416,15 +417,12 @@ input[type="submit"]:hover{
 }
 #about p1 {
         display: flex;
-        margin: 10px 10%;
+        margin: 10px 17%;
         font-family: Source Sans Pro ExtraLight;
 }
 #about h1 {
         margin: 20px 10%;
         font-family: Source Sans Pro Regular;
-}
-#whoIveWorkedWith h1 {
-        font-size: 24px;
 }
 .images {
         display: flex;
