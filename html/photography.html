@@ -127,15 +127,18 @@
                 const modalImg = document.querySelector(".modalImg");
                 const modalTxt = document.querySelector(".modalTxt");
                 const close = document.querySelector(".close");
+                const navbar = document.querySelector("nav");
 
                 images.forEach((image) => {
                         image.addEventListener("click", (e) => {
                                 modalImg.src = image.src;
                                 modalTxt.innerHTML = image.alt;
                                 modal.classList.add("appear");
+                                navbar.style.display = "none";
 
                                 close.addEventListener("click", () => {
                                         modal.classList.remove("appear");
+                                        navbar.style.display = "flex";
                                 });
                         });
                 });
