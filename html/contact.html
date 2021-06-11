@@ -31,22 +31,21 @@
         <iframe title="iframe" name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
         <!--Contact Form-->
-        <form id="contactContainer" target="hidden_iframe" 
-              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe4tpzQGhjvPqnKQaJFNX1BaiMXaYwTcPtaqqnOHzzJlKQfCw/formResponse"
-              method="post" onsubmit="return formSubmitted()">
+        <form id="contactContainer" target="hidden_iframe" method="post" 
+              name="google-sheet" autocomplete = "off">
                 <h2>I'm glad to stay in touch! Feel free to fill out the form, reach out on 
                     social media, or email me at <span>ericy@rice.edu.</span></h2>
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox">
-                                        <input required name="entry.1112098759" type="text" name="Name">
+                                        <input name="Name" required name = "PreventEntireBox" type="text">
                                         <span class="text">Name</span>
                                         <span class="line"></span>
                                 </div>
                         </div>
                         <div class="col">
                                 <div class="inputBox">
-                                        <input required name="entry.1325859121" type="text" name="Email" 
+                                        <input name="Email" required name = "PreventEntireBox" type="text" 
                                                id="email" onkeyup="validation()">
                                         <span class="text">Email <span id="IMGSPOT"></span> <span id="invalidText"></span></span>
                                         <span class="line"></span>
@@ -56,7 +55,7 @@
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox">
-                                        <input required name="entry.787066033" type="text" name="">
+                                        <input name="Subject" required name = "PreventEntireBox" type="text" >
                                         <span class="text">Subject</span>
                                         <span class="line"></span>
                                 </div>
@@ -65,7 +64,7 @@
                 <div class="row100">
                         <div class="col">
                                 <div class="inputBox textarea">
-                                        <textarea required name="entry.1074379012"></textarea>
+                                        <textarea name="Message" required name = "PreventEntireBox"></textarea>
                                         <span class="text">Message</span>
                                         <span class="line"></span>
                                 </div>
@@ -73,21 +72,21 @@
                 </div>
                 <div class="row100">
                         <div class="col">
-                                <input type="submit" value="Send">
+                                <input type="submit" name="submit" value="Send">
                         </div>
                 </div>
                 
                 <div class="socials">
-                    <a href="https://www.instagram.com/e.ricy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/eric-y-yang/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/Ericy1" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/e.ricy/" target="_blank"><em class="fab fa-instagram"></em></a>
+                    <a href="https://www.linkedin.com/in/eric-y-yang/" target="_blank"><em class="fab fa-linkedin-in"></em></a>
+                    <a href="https://github.com/Ericy1" target="_blank"><em class="fab fa-github"></em></a>
                 </div>
         </form>
 
         <!--Scripts-->
         <script src = "../js/app.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!--Email validation script-->
         <script>
@@ -109,14 +108,20 @@
                 }
         </script>
 
-        <!--Sweet Alert and reset on form submission-->
         <script>
-                function formSubmitted() {
-                        document.getElementById("contactContainer").reset();
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw6lM3qxoPiKKnh5rTszjXS2D6nUhHfKGEuQTn6xbsvXdq4vbqe4WOTzyM-ymsKX6_a/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                
+                // Sweet Alert 2 and reset on form submission
+                document.getElementById("contactContainer").reset();
                         document.getElementById("IMGSPOT").innerHTML = '';
                         invalidText.style.color = "transparent";
-                        sweetAlert("Success!", "You'll hear back from me soon!", "success");
-                }
+                        Swal.fire('Sent!', "You'll hear back from me soon!", 'success');
+            })
         </script>
 </body>
 </html>
