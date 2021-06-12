@@ -29,7 +29,7 @@
         color:#fff;
 }
 
-html {
+html, body {
     overflow-x: hidden;
 } 
 
@@ -151,7 +151,7 @@ nav #logo img{
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-        font-size: 2.5em;
+        font-size: 2.4em;
         z-index: 3;
 }
 .typedJSArea h1 .type {
@@ -223,7 +223,7 @@ nav #logo img{
 #scrollSection p1 {
         display: flex;
         font-size: 1.7rem;
-        margin: 40px 20%;
+        margin: 40px 12%;
         font-family: Source Sans Pro ExtraLight;
 }
 
@@ -356,6 +356,11 @@ nav #logo img{
         font-size: 18px;
         font-family: Source Sans Pro Regular;
 }
+@media(max-width: 750px) {
+    #contactContainer {
+        margin: 70px 5%;
+    }
+}
 
 .socials {
     height: 15vh;
@@ -430,7 +435,7 @@ input[type="submit"]:hover{
 
 /* About section */
 #about {
-        margin: 20px;
+        margin: 15px;
         box-sizing: border-box;
         text-align: center;
         justify-content: center;
@@ -438,7 +443,7 @@ input[type="submit"]:hover{
 }
 #about p1 {
         display: flex;
-        margin: 10px 17%;
+        margin: 10px 12%;
         font-family: Source Sans Pro ExtraLight;
 }
 #about h1 {
@@ -491,10 +496,10 @@ input[type="submit"]:hover{
 }
 @media(max-width: 500px) {
     #about h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
     #about p1 {
-        font-size: 16px;
+        font-size: 18px;
     }
     #nasa {
             margin: 10px;
