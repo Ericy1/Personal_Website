@@ -184,8 +184,8 @@ nav #logo img{
         height: 13px;
         width: 13px;
         transform: translate(-50%, -100%) rotate(45deg);
-        border-top: transparent;
-        border-left: transparent;
+        border-top: 0px transparent;
+        border-left: 0px transparent;
         animation: scrollDown 1.3s ease-in-out infinite;
 }
 #scrollDown::before {
