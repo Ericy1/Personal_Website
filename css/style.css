@@ -29,6 +29,10 @@
         color:#fff;
 }
 
+html {
+    overflow-x: hidden;
+} 
+
 /* Body Styling */
 body {
         background: #0b0b0b;
@@ -206,7 +210,7 @@ nav #logo img{
 
 /* Scroll Down Area */
 #scrollSection {
-        height: 90vh;
+        height: 85vh;
         box-sizing: border-box;
         text-align: center;
         justify-content: center;
@@ -221,6 +225,25 @@ nav #logo img{
         font-size: 1.7rem;
         margin: 40px 20%;
         font-family: Source Sans Pro ExtraLight;
+}
+
+@media(min-width: 923px) {
+    #scrollSection {
+        height: calc(width/16.8);
+    }
+}
+
+@media(max-width: 680px) {
+    #scrollSection {
+        height: auto;
+    }
+    #scrollSection h1 {
+        font-size: 24px;
+    }
+
+    #scrollSection p1 {
+        font-size: 20px;
+    }
 }
 
 /* Contact Form */
@@ -407,8 +430,7 @@ input[type="submit"]:hover{
 
 /* About section */
 #about {
-        margin: 50px;
-        height: 94vh;
+        margin: 20px;
         box-sizing: border-box;
         text-align: center;
         justify-content: center;
@@ -444,6 +466,70 @@ input[type="submit"]:hover{
         max-width:250px;
 }
 
+@media(max-width: 665px) {
+    #about h1 {
+        font-size: 30px;
+    }
+    #about p1 {
+        font-size: 22px;
+    }
+    #nasa {
+            margin: 10px;
+            max-height:100px;
+            max-width:100px;
+    }
+    #jacobs {
+            margin: 10px;
+            max-height:127px;
+            max-width:127px;
+    }
+    #llnl {
+            margin: 10px;
+            max-height:180px;
+            max-width:180px;
+    }
+}
+@media(max-width: 500px) {
+    #about h1 {
+        font-size: 24px;
+    }
+    #about p1 {
+        font-size: 16px;
+    }
+    #nasa {
+            margin: 10px;
+            max-height:70px;
+            max-width:70px;
+    }
+    #jacobs {
+            margin: 10px;
+            max-height:92px;
+            max-width:92px;
+    }
+    #llnl {
+            margin: 10px;
+            max-height:130px;
+            max-width:130px;
+    }
+}
+@media(max-width: 380px) {
+    #nasa {
+            margin: 8px;
+            max-height:55px;
+            max-width:55px;
+    }
+    #jacobs {
+            margin: 8px;
+            max-height:75px;
+            max-width:75px;
+    }
+    #llnl {
+            margin: 8px;
+            max-height:110px;
+            max-width:110px;
+    }
+}
+
 /* Shooting Stars */
 .shootingstars{
     position: absolute;
@@ -467,7 +553,7 @@ input[type="submit"]:hover{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 250px;
     height: 1px;
     background: linear-gradient(90deg, #fff, transparent);
 }
@@ -562,7 +648,7 @@ input[type="submit"]:hover{
 
 #bg
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;

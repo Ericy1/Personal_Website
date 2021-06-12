@@ -108,5 +108,38 @@
 #photoHeader {
         font-size: 24px;
         text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
         height: 235px;
+        height: 235px;
+}
+
+@media(max-width: 770px) {
+    #photoHeader {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        height: 235px;
+    }
+}
+
+@media(max-width: 628px) {
+    #photoHeader {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 235px;
+    }
+}
+
+@media(max-width: 470px) {
+    #photoHeader {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 200px;
+    }
 }
