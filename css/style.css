@@ -12,7 +12,7 @@
 *::-webkit-scrollbar {
         display: none;
 }
-      
+
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
         -ms-overflow-style: none;  /* IE and Edge */
@@ -30,6 +30,7 @@
 }
 
 html, body {
+    /* position: relative; */
     overflow-x: hidden;
 } 
 
@@ -81,7 +82,7 @@ nav #mainMenu #closeMenu, .icons i {
         display: none;
         cursor: pointer; 
 }
-nav #logo img{
+nav #logo img {
         max-height:65px;
         max-width:65px;
         margin: 20px;
@@ -164,10 +165,10 @@ nav #logo img{
 
 /* Scroll Down Animation */
 #scrollDown {
+        position: absolute;
         height: 50px;
         width: 30px;
-        position: absolute;
-        left: 49%;
+        left: 50%;
         bottom: 35px;
         border-radius: 50px;
 }
@@ -177,15 +178,14 @@ nav #logo img{
         position: absolute;
         justify-content: center;
         top: 20%;
-        left: 50%;
-        border: 1px solid ;
+        border: 1px solid;
         border-image: linear-gradient(to right, #f32170, #ffeb07);
         border-image-slice: 1;
         height: 13px;
         width: 13px;
         transform: translate(-50%, -100%) rotate(45deg);
-        border-top: 0px;/*transparent;*/
-        border-left: 0px;/*transparent;*/
+        border-top: 0px;
+        border-left: 0px;
         animation: scrollDown 1.3s ease-in-out infinite;
 }
 #scrollDown::before {
@@ -536,7 +536,7 @@ input[type="submit"]:hover{
 }
 
 /* Shooting Stars */
-.shootingstars{
+.shootingstars {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -563,87 +563,75 @@ input[type="submit"]:hover{
     background: linear-gradient(90deg, #fff, transparent);
 }
 @keyframes animate {
-    0%
-    {
+    0% {
         transform: rotate(315deg) translateX(0);
         opacity: 0.45;
     }
-    70%
-    {
+    70% {
         opacity: 0.45;
     }
-    100%
-    {
+    100% {
         transform: rotate(315deg) translateX(-1300px);
         opacity: 0;
     }
 }
-.shootingstars:nth-child(1)
-{
+.shootingstars:nth-child(1) {
     top: 0px;
     right: 80px;
     left: initial;
     animation-duration: 8s;
     z-index: -1;
 }
-.shootingstars:nth-child(2)
-{
+.shootingstars:nth-child(2) {
     top: 220px;
     right: 0px;
     left: initial;
     animation-duration: 15s;
     z-index: -1;
 }
-.shootingstars:nth-child(3)
-{
+.shootingstars:nth-child(3) {
     top: 0px;
     right: 180px;
     left: initial;
     animation-duration: 20s;
     z-index: -1;
 }
-.shootingstars:nth-child(4)
-{
+.shootingstars:nth-child(4) {
     top: 0px;
     right: 500px;
     left: initial;
     animation-duration: 10s;
     z-index: -1;
 }
-.shootingstars:nth-child(5)
-{
+.shootingstars:nth-child(5) {
     top: 0px;
     right: 700px;
     left: initial;
     animation-duration: 6.2s;
     z-index: -1;
 }
-.shootingstars:nth-child(6)
-{
+.shootingstars:nth-child(6) {
     top: 0px;
     right: 1000px;
     left: initial;
     animation-duration: 9s;
     z-index: -1;
 }
-.shootingstars:nth-child(7)
-{
+.shootingstars:nth-child(7) {
     top: 0px;
     right: 840px;
     left: initial;
     animation-duration: 22s;
     z-index: -1;
 }
-.shootingstars:nth-child(8)
-{
+.shootingstars:nth-child(8) {
     top: 400px;
     right: 450px;
     left: 100%;
     animation-duration: 7s;
     z-index: -1;
 }
-.shootingstars:nth-child(9)
-{
+.shootingstars:nth-child(9) {
     top: 700px;
     right: 450px;
     left: 100%;
@@ -651,8 +639,7 @@ input[type="submit"]:hover{
     z-index: -1;
 }
 
-#bg
-{
+#bg {
     position: fixed;
     top: 0;
     left: 0;

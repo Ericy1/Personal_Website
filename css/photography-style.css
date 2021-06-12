@@ -69,8 +69,8 @@
 
 .modalImg {
         object-fit: contain;
-        width: 90%;
-        height: 800px;
+        max-height: 78vh;
+        width: 95%;
 }
 
 .modalTxt {
