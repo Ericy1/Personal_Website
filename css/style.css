@@ -233,12 +233,12 @@ nav #logo img {
         font-size: calc(0.05vw + 1.1vh + 1.8vmin);
     }
 }
-@media(max-width: 1029px) {
-    #scrollSection {
-        height: 90vh;
+@media(max-width: 400px) {
+    #scrollSection h1 {
+        font-size: 28px;
     }
     #scrollSection p1{
-        font-size: calc(0.05vw + 1.1vh + 1.8vmin);
+        font-size: 20px;
     }
 }
 
@@ -495,7 +495,7 @@ input[type="submit"]:hover{
         font-size: 26px;
     }
     #about p1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     #nasa {
             margin: 10px;
