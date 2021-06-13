@@ -210,8 +210,7 @@ nav #logo img {
 
 /* Scroll Down Area */
 #scrollSection {
-        height: 85vh;
-        box-sizing: border-box;
+        height: 90vh;
         text-align: center;
         justify-content: center;
 }
@@ -227,15 +226,15 @@ nav #logo img {
         font-family: Source Sans Pro ExtraLight;
 }
 
-@media(min-width: 923px) {
-    #scrollSection {
-        height: calc(width/16.8);
+@media(min-width: 681px) {
+    #scrollSection p1{
+        font-size: calc(1.1vh + 1.8vmin);
     }
 }
 
 @media(max-width: 680px) {
     #scrollSection {
-        height: auto;
+        height: width;
     }
     #scrollSection h1 {
         font-size: 24px;
