@@ -143,3 +143,12 @@
         height: 200px;
     }
 }
+
+#photoHeader a {
+    font-family: Source Sans Pro Regular;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+                background-clip: text;
+        text-shadow: 0 0 10px #0b0b0b;
+}
