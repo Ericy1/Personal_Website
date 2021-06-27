@@ -1,128 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Contact Eric Yang">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Eric Yang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Contact | Eric Yang</title>
+    <title>Contact | Eric Yang</title>
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" href="other-images/Logo.png"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="other-images/Logo.png"/>
 
-        <!--Nav Bar Hamburger Menu-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Nav Bar Hamburger Menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <!--Navigation Bar-->
-        <nav>
-                <div id="logo"><a href="https://www.ericyyang.com"><img src="other-images/Logo.png" alt="Logo"></a></div>
-                <div id="openMenu"><em class="fa fa-bars"></em></div>
+    <!--Navigation Bar-->
+    <nav>
+        <div id="logo"><a href="https://www.ericyyang.com"><img src="other-images/Logo.png" alt="Logo"></a></div>
+        <div id="openMenu"><em class="fa fa-bars"></em></div>
 
-                <ul id="mainMenu">
-                        <li><a href="work" class="underlined-link">Work</a></li>
-                        <li><a href="photography" class="underlined-link1">Photography</a></li>
-                        <li><a href="contact" class="underlined-link">Contact</a></li>
-                        <div id="closeMenu"><em class="fa fa-times"></em></div>
-                </ul>
-        </nav>
+        <ul id="mainMenu">
+            <li><a href="work" class="underlined-link">Work</a></li>
+            <li><a href="photography" class="underlined-link1">Photography</a></li>
+            <li><a href="contact" class="underlined-link">Contact</a></li>
+            <div id="closeMenu"><em class="fa fa-times"></em></div>
+        </ul>
+    </nav>
 
-        <!--Prevent google sheets form from opening-->
-        <iframe title="iframe" name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <!--Prevent google sheets form from opening-->
+    <iframe title="iframe" name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
-        <!--Contact Form-->
-        <form id="contactContainer" target="hidden_iframe" method="post" 
-              name="google-sheet" autocomplete = "off">
-                <h2>I'm glad to stay in touch! Feel free to fill out the form, reach out on 
-                    social media, or email me at <span>ericy@rice.edu.</span></h2>
-                <div class="row100">
-                        <div class="col">
-                                <div class="inputBox">
-                                        <input name="Name" required name = "PreventEntireBox" type="text">
-                                        <span class="text">Name</span>
-                                        <span class="line"></span>
-                                </div>
-                        </div>
-                        <div class="col">
-                                <div class="inputBox">
-                                        <input name="Email" required name = "PreventEntireBox" type="text" 
-                                               id="email" onkeyup="validation()">
-                                        <span class="text">Email <span id="IMGSPOT"></span> <span id="invalidText"></span></span>
-                                        <span class="line"></span>
-                                </div>
-                        </div>
+    <!--Contact Form-->
+    <form id="contactContainer" target="hidden_iframe" method="post" 
+        name="google-sheet" autocomplete = "off">
+        <h2>I'm glad to stay in touch! Feel free to fill out the form, reach out on 
+            social media, or email me at <span>ericy@rice.edu.</span></h2>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input name="Name" required name = "PreventEntireBox" type="text">
+                    <span class="text">Name</span>
+                    <span class="line"></span>
                 </div>
-                <div class="row100">
-                        <div class="col">
-                                <div class="inputBox">
-                                        <input name="Subject" required name = "PreventEntireBox" type="text" >
-                                        <span class="text">Subject</span>
-                                        <span class="line"></span>
-                                </div>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="inputBox">
+                    <input name="Email" required name = "PreventEntireBox" type="text" 
+                        id="email" onkeyup="validation()">
+                    <span class="text">Email <span id="IMGSPOT"></span> <span id="invalidText"></span></span>
+                    <span class="line"></span>
                 </div>
-                <div class="row100">
-                        <div class="col">
-                                <div class="inputBox textarea">
-                                        <textarea name="Message" required name = "PreventEntireBox"></textarea>
-                                        <span class="text">Message</span>
-                                        <span class="line"></span>
-                                </div>
-                        </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input name="Subject" required name = "PreventEntireBox" type="text" >
+                    <span class="text">Subject</span>
+                    <span class="line"></span>
                 </div>
-                <div class="row100">
-                        <div class="col">
-                                <input type="submit" name="submit" value="Send">
-                        </div>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox textarea">
+                    <textarea name="Message" required name = "PreventEntireBox"></textarea>
+                    <span class="text">Message</span>
+                    <span class="line"></span>
                 </div>
-                
-                <div class="socials">
-                    <a href="https://www.instagram.com/e.ricy/" target="_blank"><em class="fab fa-instagram"></em></a>
-                    <a href="https://www.linkedin.com/in/eric-y-yang/" target="_blank"><em class="fab fa-linkedin-in"></em></a>
-                    <a href="https://github.com/Ericy1" target="_blank"><em class="fab fa-github"></em></a>
-                </div>
-        </form>
+            </div>
+        </div>
+        <div class="row100">
+            <div class="col">
+                <input type="submit" name="submit" value="Send">
+            </div>
+        </div>
+        
+        <div class="socials">
+            <a href="https://www.instagram.com/e.ricy/" target="_blank"><em class="fab fa-instagram"></em></a>
+            <a href="https://www.linkedin.com/in/eric-y-yang/" target="_blank"><em class="fab fa-linkedin-in"></em></a>
+            <a href="https://github.com/Ericy1" target="_blank"><em class="fab fa-github"></em></a>
+        </div>
+    </form>
 
-        <!--Scripts-->
-        <script src = "js/app.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Scripts-->
+    <script src = "js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-        <!--Email validation script-->
-        <script>
-                function validation() {
-                        var form = document.getElementById("contactContainer");
-                        var email = document.getElementById("email").value;
-                        var invalidText = document.getElementById("invalidText");
-                        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    <!--Email validation script-->
+    <script>
+        function validation() {
+            var form = document.getElementById("contactContainer");
+            var email = document.getElementById("email").value;
+            var invalidText = document.getElementById("invalidText");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-                        if (email.match(pattern)) {
-                                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/valid.png>";
-                                invalidText.innerHTML = "(Valid Email Address)";
-                                invalidText.style.color = "#00ff00";
-                        } else {
-                                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/invalid.png>";
-                                invalidText.innerHTML = "(Invalid Email Address!)";
-                                invalidText.style.color = "#ff0000";
-                        }
-                }
-        </script>
+            if (email.match(pattern)) {
+                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/valid.png>";
+                invalidText.innerHTML = "(Valid Email Address)";
+                invalidText.style.color = "#00ff00";
+            } else {
+                document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/invalid.png>";
+                invalidText.innerHTML = "(Invalid Email Address!)";
+                invalidText.style.color = "#ff0000";
+            }
+        }
+    </script>
 
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbw6lM3qxoPiKKnh5rTszjXS2D6nUhHfKGEuQTn6xbsvXdq4vbqe4WOTzyM-ymsKX6_a/exec'
-            const form = document.forms['google-sheet']
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw6lM3qxoPiKKnh5rTszjXS2D6nUhHfKGEuQTn6xbsvXdq4vbqe4WOTzyM-ymsKX6_a/exec'
+        const form = document.forms['google-sheet']
 
-            form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                
-                // Sweet Alert 2 and reset on form submission
-                document.getElementById("contactContainer").reset();
-                        document.getElementById("IMGSPOT").innerHTML = '';
-                        invalidText.style.color = "transparent";
-                        Swal.fire('Sent!', "You'll hear back from me soon!", 'success');
-            })
-        </script>
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            
+            // Sweet Alert 2 and reset on form submission
+            document.getElementById("contactContainer").reset();
+                document.getElementById("IMGSPOT").innerHTML = '';
+                invalidText.style.color = "transparent";
+                Swal.fire('Sent!', "You'll hear back from me soon!", 'success');
+        })
+    </script>
 </body>
 </html>
