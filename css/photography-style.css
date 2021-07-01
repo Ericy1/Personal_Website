@@ -111,26 +111,56 @@
         margin-left: 25%;
         margin-right: 25%;
         height: 235px;
-        height: 235px;
+        height: 250px;
 }
 
-@media(max-width: 770px) {
+@media(max-width: 1388px) {
     #photoHeader {
         font-size: 24px;
         text-align: center;
         margin-left: 25%;
         margin-right: 25%;
-        height: 235px;
+        height: 270px;
     }
 }
 
-@media(max-width: 730px) {
+@media(max-width: 950px) {
     #photoHeader {
         font-size: 24px;
         text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        height: 235px;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 270px;
+    }
+}
+
+@media(max-width: 866px) {
+    #photoHeader {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 270px;
+    }
+}
+
+@media(max-width: 674px) {
+    #photoHeader {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 290px;
+    }
+}
+
+@media(max-width: 514px) {
+    #photoHeader {
+        font-size: 24px;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        height: 330px;
     }
 }
 
@@ -140,7 +170,7 @@
         text-align: center;
         margin-left: 10%;
         margin-right: 10%;
-        height: 200px;
+        height: 270px;
     }
 }
 
@@ -151,4 +181,9 @@
         -webkit-background-clip: text;
                 background-clip: text;
         text-shadow: 0 0 10px #0b0b0b;
+}
+
+#photoHeader #note {
+    font-size: 16px;
+    text-align: center;
 }
