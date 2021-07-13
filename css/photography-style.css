@@ -74,7 +74,7 @@
 }
 
 .modalTxt {
-        font-family: Source Sans Pro ExtraLight;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
         margin-top: 0.4em;
 }
 
@@ -185,7 +185,7 @@
 }
 
 #photoHeader a {
-    font-family: Source Sans Pro Regular;
+    font-family: Source Sans Pro Regular, 'Calibry';
     background: linear-gradient(to right, #f32170, #ffeb07);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;

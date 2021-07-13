@@ -24,7 +24,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: Source Sans Pro ExtraLight, sans-serif;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
         font-weight: lighter;
         color:#fff;
 }
@@ -60,7 +60,7 @@ nav #mainMenu li a {
         display: inline-block;
         text-decoration: none;
 
-        font-family: Source Sans Pro ExtraLight, sans-serif;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
         font-weight: lighter;
         font-size: 1.5rem;
 }
@@ -146,7 +146,7 @@ nav #logo img {
 
 /* Center Area with TypedJS */
 .typedJSArea h1 {
-        font-family: Source Sans Pro ExtraLight, sans-serif;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
         font-weight: lighter;
         position: absolute;
         top: 50%;
@@ -216,13 +216,13 @@ nav #logo img {
 #scrollSection h1 {
         font-size: 2.4rem;
         width: 100%;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri Light';
 }
 #scrollSection p1 {
         display: flex;
         font-size: 1.7rem;
         margin: 40px 12%;
-        font-family: Source Sans Pro ExtraLight, sans-serif;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
 }
 
 @media(min-width: 1030px) {
@@ -292,7 +292,7 @@ nav #logo img {
         padding: 0 10px;
         z-index: 1;
         color: #fff;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri';
 }
 #contactContainer .row100 .inputBox .text {
         position: absolute;
@@ -304,7 +304,7 @@ nav #logo img {
         display: block;
         transition: 0.5s;
         pointer-events: none;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri';
 }
 #contactContainer .row100 .inputBox input:focus + .text,
 #contactContainer .row100 .inputBox input:valid + .text {
@@ -350,7 +350,7 @@ nav #logo img {
 }
 #contactContainer .row100 .inputBox #invalidText {
         font-size: 18px;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri Light';
 }
 @media(max-width: 750px) {
     #contactContainer {
@@ -416,7 +416,7 @@ input[type="submit"] {
         background: transparent;
         border-width: 2px;
         border-image: linear-gradient(90deg,  #f32170, #F5425E) 1;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri Light';
         font-size: 18px;
         transition: 0.6s;
 }
@@ -440,11 +440,11 @@ input[type="submit"]:hover{
 #about p1 {
         display: flex;
         margin: 10px 9%;
-        font-family: Source Sans Pro ExtraLight, sans-serif;
+        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
 }
 #about h1 {
         margin: 20px 10%;
-        font-family: Source Sans Pro Regular, sans-serif;
+        font-family: Source Sans Pro Regular, 'Calibri';
 }
 .images {
         display: flex;
