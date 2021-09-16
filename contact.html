@@ -134,7 +134,7 @@
             var form = document.getElementById("contactContainer");
             var email = document.getElementById("email").value;
             var invalidText = document.getElementById("invalidText");
-            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            var pattern = "[^@\s]+@[^@\s]+\.[^@\s]+";
 
             if (email.match(pattern)) {
                 document.getElementById("IMGSPOT").innerHTML = "<img src=../other-images/valid.png>";
