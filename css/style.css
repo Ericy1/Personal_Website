@@ -1,228 +1,227 @@
 /* Fonts */
 @font-face {
-        src: url(../fonts/SourceSansPro-Regular.ttf);
-        font-family: Source Sans Pro Regular;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-family: Source Sans Pro Regular;
 }
 @font-face {
-        src: url(../fonts/SourceSansPro-ExtraLight.ttf);
-        font-family: Source Sans Pro ExtraLight;
+    src: url(../fonts/SourceSansPro-ExtraLight.ttf);
+    font-family: Source Sans Pro ExtraLight;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
-        display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 * {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 /* Universal styling */
 * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
-        font-weight: lighter;
-        color:#fff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro ExtraLight, 'Calibri Light';
+    font-weight: lighter;
+    color:#fff;
 }
 
 html, body {
-    /* position: relative; */
     overflow-x: hidden;
 } 
 
 /* Body Styling */
 body {
-        background: #0b0b0b;
+    background: #0b0b0b;
 }
 
 .spacing {
-        height: 100vh;
+    height: 100vh;
 }
 
 /* Navigation Styling */
 nav {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        z-index: 999;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
 }
 nav #mainMenu {
-        display: flex;
-        list-style: none;
+    display: flex;
+    list-style: none;
 }
 nav #mainMenu li a {
-        margin: 22px;
-        padding: 10px;
-        display: inline-block;
-        text-decoration: none;
+    margin: 22px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
 
-        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
-        font-weight: lighter;
-        font-size: 1.5rem;
+    font-family: Source Sans Pro ExtraLight, 'Calibri Light';
+    font-weight: lighter;
+    font-size: 1.5rem;
 }
 nav #mainMenu .underlined-link1 {
-        background: linear-gradient(to right, #f32170, #ffeb07);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-                background-clip: text;
-        text-shadow: 0 0 10px #0b0b0b;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    text-shadow: 0 0 10px #0b0b0b;
 }
 nav #openMenu {
-        font-size: 2rem;
-        margin: 30px;
-        display: none;
-        cursor: pointer;
+    font-size: 2rem;
+    margin: 30px;
+    display: none;
+    cursor: pointer;
 }
 nav #mainMenu #closeMenu, .icons i {
-        font-size: 2rem;
-        display: none;
-        cursor: pointer; 
+    font-size: 2rem;
+    display: none;
+    cursor: pointer; 
 }
 nav #logo img {
-        max-height:65px;
-        max-width:65px;
-        margin: 20px;
-        left: 25px;
-        cursor: pointer;
+    max-height:65px;
+    max-width:65px;
+    margin: 20px;
+    left: 25px;
+    cursor: pointer;
 }
 @media(max-width: 750px) {
-        nav #mainMenu {
-                height: 100vh;
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0px;
-                z-index: 10;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: #0b0b0b;
-                display: none;
-        }
-        nav #mainMenu #closeMenu {
-                display: block;
-                position: absolute;
-                top: 30px;
-                right: 31px;
-        }
-        nav #openMenu {
-                display: block;
-        }
-        .icons i {
-                display: inline-block;
-                padding: 12px;
-        }
+    nav #mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0b0b0b;
+        display: none;
+    }
+    nav #mainMenu #closeMenu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 31px;
+    }
+    nav #openMenu {
+        display: block;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
 }
 
 /* Navigation Bar Underlining */
 .underlined-link::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #fff;
-        transition: width, .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width, .3s;
 }
 .underlined-link:hover::after {
-        width: 100%;
-        transition: width .3s;
+    width: 100%;
+    transition: width .3s;
 }
 .underlined-link1::after {
-        content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: linear-gradient(to right, #f32170, #ffeb07);
-        transition: width, .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    transition: width, .3s;
 }
 .underlined-link1:hover::after {
-        width: 100%;
-        transition: width .3s;
+    width: 100%;
+    transition: width .3s;
 }
 
 /* Center Area with TypedJS */
 .typedJSArea h1 {
-        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
-        font-weight: lighter;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        font-size: 2.4em;
-        z-index: 3;
+    font-family: Source Sans Pro ExtraLight, 'Calibri Light';
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2.4em;
+    z-index: 3;
 }
 .typedJSArea h1 .type {
-        background: linear-gradient(to right, #f32170, #ffeb07);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-                background-clip: text;
-        text-shadow: 0 0 10px #0b0b0b;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    text-shadow: 0 0 10px #0b0b0b;
 }
 
 /* Scroll Down Animation */
 #scrollDown {
-        position: absolute;
-        height: 50px;
-        width: 30px;
-        left: 50%;
-        bottom: 35px;
-        border-radius: 50px;
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: 50%;
+    bottom: 35px;
+    border-radius: 50px;
 }
 #scrollDown::before,
 #scrollDown::after {
-        content: "";
-        position: absolute;
-        justify-content: center;
-        top: 20%;
-        border: 1px solid;
-        border-image: linear-gradient(to right, #f32170, #ffeb07);
-        border-image-slice: 1;
-        height: 13px;
-        width: 13px;
-        transform: translate(-50%, -100%) rotate(45deg);
-        border-top: 0px;
-        border-left: 0px;
-        animation: scrollDown 1.3s ease-in-out infinite;
+    content: "";
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #f32170, #ffeb07);
+    border-image-slice: 1;
+    height: 13px;
+    width: 13px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: 0px;
+    border-left: 0px;
+    animation: scrollDown 1.3s ease-in-out infinite;
 }
 #scrollDown::before {
-        top: 20%;
-        animation-delay: 0.3s;
+    top: 20%;
+    animation-delay: 0.3s;
 }
 @keyframes scrollDown {
-        0% {
-                opacity: 0;
-        }
-        30% {
-                opacity: 1;
-        }
-        60% {
-                opacity: 1;
-        }
-        100% {
-                top: 90%;
-                opacity: 0;
-        }
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
 }
 
 /* Scroll Down Area */
 #scrollSection {
-        text-align: center;
-        justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 #scrollSection h1 {
-        font-size: 2.4rem;
-        width: 100%;
-        font-family: Source Sans Pro Regular, 'Calibri Light';
+    font-size: 2.4rem;
+    width: 100%;
+    font-family: Source Sans Pro Regular, 'Calibri Light';
 }
 #scrollSection p1 {
-        display: flex;
-        font-size: 1.7rem;
-        margin: 40px 12%;
-        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
+    display: flex;
+    font-size: 1.7rem;
+    margin: 40px 12%;
+    font-family: Source Sans Pro ExtraLight, 'Calibri Light';
 }
 
 @media(min-width: 1030px) {
@@ -244,113 +243,113 @@ nav #logo img {
 
 /* Contact Form */
 #contactContainer {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin: 70px 20%;
-        padding: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 20%;
+    padding: 20px;
 }
 #contactContainer h2 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 #contactContainer h2 span{
-        background: linear-gradient(to right, #f32170, #ffeb07);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-                background-clip: text;
+background: linear-gradient(to right, #f32170, #ffeb07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
 }
 #contactContainer .row100 {
-        position: relative;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
 #contactContainer .row100 .col {
-        position: relative;
-        width: 100%;
-        padding: 0 10px;
-        margin: 40px 0 10px;
-        transition: 0.5s;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 40px 0 10px;
+    transition: 0.5s;
 }
 #contactContainer .row100 .inputBox {
-        position: relative;
-        width: 100%;
-        height: 40px;
+    position: relative;
+    width: 100%;
+    height: 40px;
 }
 #contactContainer .row100 .inputBox input,
 #contactContainer .row100 .inputBox.textarea textarea {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        box-shadow: none;
-        border: none;
-        outline: none;
-        font-size: 18px;
-        padding: 0 10px;
-        z-index: 1;
-        color: #fff;
-        font-family: Source Sans Pro Regular, 'Calibri';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+    font-family: Source Sans Pro Regular, 'Calibri';
 }
 #contactContainer .row100 .inputBox .text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        line-height: 40px;
-        font-size: 18px;
-        padding: 0 10px;
-        display: block;
-        transition: 0.5s;
-        pointer-events: none;
-        font-family: Source Sans Pro Regular, 'Calibri';
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+    font-family: Source Sans Pro Regular, 'Calibri';
 }
 #contactContainer .row100 .inputBox input:focus + .text,
 #contactContainer .row100 .inputBox input:valid + .text {
-        top: -35px;
-        left: -10px;
+    top: -35px;
+    left: -10px;
 }
 #contactContainer .row100 .inputBox .line {
-        position: absolute;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 2px;
-        transition: 0.5s;
-        background: linear-gradient(to right, #f32170, #ffeb07);
-        border-radius: 2px;
-        pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    border-radius: 2px;
+    pointer-events: none;
 }
 #contactContainer .row100 .inputBox input:focus ~ .line,
 #contactContainer .row100 .inputBox input:valid ~ .line {
-        height: 100%;
+    height: 100%;
 }
 #contactContainer .row100 .inputBox.textarea {
-        position: relative;
-        width: 100%;
-        height: 100px;
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 #contactContainer .row100 .inputBox.textarea textarea {
-        height: 100%;
-        resize: none;
+    height: 100%;
+    resize: none;
 }
 #contactContainer .row100 .inputBox textarea:focus + .text,
 #contactContainer .row100 .inputBox textarea:valid + .text {
-        top: -35px;
-        left: -10px;
+    top: -35px;
+    left: -10px;
 }
 #contactContainer .row100 .inputBox textarea:focus ~ .line,
 #contactContainer .row100 .inputBox textarea:valid ~ .line {
-        height: 100%;
+    height: 100%;
 }
 #contactContainer .row100 .inputBox .manImg {
-        width: 18px;
-        padding: 0 2px;
+    width: 18px;
+    padding: 0 2px;
 }
 #contactContainer .row100 .inputBox #invalidText {
-        font-size: 18px;
-        font-family: Source Sans Pro Regular, 'Calibri Light';
+    font-size: 18px;
+    font-family: Source Sans Pro Regular, 'Calibri Light';
 }
 @media(max-width: 750px) {
     #contactContainer {
@@ -410,18 +409,18 @@ nav #logo img {
 
 /* Form submit */
 input[type="submit"] {
-        padding: 7px 35px;
-        cursor: pointer;
-        outline: none;
-        background: transparent;
-        border-width: 2px;
-        border-image: linear-gradient(90deg,  #f32170, #F5425E) 1;
-        font-family: Source Sans Pro Regular, 'Calibri Light';
-        font-size: 18px;
-        transition: 0.6s;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border-width: 2px;
+    border-image: linear-gradient(90deg,  #f32170, #F5425E) 1;
+    font-family: Source Sans Pro Regular, 'Calibri Light';
+    font-size: 18px;
+    transition: 0.6s;
 }
 input[type="submit"]:hover{ 
-        background: linear-gradient(to right, #f32170, #F5425E);       
+    background: linear-gradient(to right, #f32170, #F5425E);       
 }
 
 /* Valid/Invalid image */
@@ -431,40 +430,84 @@ input[type="submit"]:hover{
 
 /* About section */
 #about {
-        margin: 15px;
-        box-sizing: border-box;
-        text-align: center;
-        justify-content: center;
-        font-size: 24px;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
 }
 #about p1 {
-        display: flex;
-        margin: 10px 9%;
-        font-family: Source Sans Pro ExtraLight, 'Calibri Light';
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Source Sans Pro ExtraLight, 'Calibri Light';
 }
+#workPage {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 #about h1 {
-        margin: 20px 10%;
-        font-family: Source Sans Pro Regular, 'Calibri';
+    margin: 0px 10%;
+    font-family: Source Sans Pro Regular, 'Calibri';
+    background: linear-gradient(to right, #f32170, #ffeb07);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    text-shadow: 0 0 10px #0b0b0b;
 }
+#about h4 {
+    margin: 0px 10%;
+    font-family: Source Sans Pro Regular, 'Calibri';
+    text-shadow: 0 0 10px #0b0b0b;
+}
+
 .images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #nasa {
-        margin: 20px;
-        max-height:150px;
-        max-width:150px;
+    margin: 20px;
+    max-height: 150px;
+    max-width: 150px;
 }
 #jacobs {
-        margin: 20px;
-        max-height:150px;
-        max-width:150px;
+    margin: 20px;
+    max-height: 150px;
+    max-width: 150px;
 }
 #llnl {
-        margin: 20px;
-        max-height:250px;
-        max-width:250px;
+    margin: 20px;
+    max-height: 250px;
+    max-width: 250px;
+}
+#fullStack1 {
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 2px;
+}
+#fullStack2 {
+    max-height: 289px;
+    max-width: 289px;
+}
+#hatch {
+    max-height: 571px;
+    max-width: 571px;
+}
+#hatch2 {
+    max-height: 475px;
+    max-width: 475px;
+}
+#game1 {
+    max-height: 375px;
+    max-width: 375px;
+}
+#game2 {
+    max-height: 374px;
+    max-width: 374px;
 }
 
 @media(max-width: 665px) {
@@ -475,19 +518,19 @@ input[type="submit"]:hover{
         font-size: 22px;
     }
     #nasa {
-            margin: 10px;
-            max-height:100px;
-            max-width:100px;
+        margin: 10px;
+        max-height:100px;
+        max-width:100px;
     }
     #jacobs {
-            margin: 10px;
-            max-height:127px;
-            max-width:127px;
+        margin: 10px;
+        max-height:127px;
+        max-width:127px;
     }
     #llnl {
-            margin: 10px;
-            max-height:180px;
-            max-width:180px;
+        margin: 10px;
+        max-height:180px;
+        max-width:180px;
     }
 }
 @media(max-width: 500px) {
@@ -498,36 +541,36 @@ input[type="submit"]:hover{
         font-size: 20px;
     }
     #nasa {
-            margin: 10px;
-            max-height:70px;
-            max-width:70px;
+        margin: 10px;
+        max-height:70px;
+        max-width:70px;
     }
     #jacobs {
-            margin: 10px;
-            max-height:92px;
-            max-width:92px;
+        margin: 10px;
+        max-height:92px;
+        max-width:92px;
     }
     #llnl {
-            margin: 10px;
-            max-height:130px;
-            max-width:130px;
+        margin: 10px;
+        max-height:130px;
+        max-width:130px;
     }
 }
 @media(max-width: 380px) {
     #nasa {
-            margin: 8px;
-            max-height:55px;
-            max-width:55px;
+        margin: 8px;
+        max-height:55px;
+        max-width:55px;
     }
     #jacobs {
-            margin: 8px;
-            max-height:75px;
-            max-width:75px;
+        margin: 8px;
+        max-height:75px;
+        max-width:75px;
     }
     #llnl {
-            margin: 8px;
-            max-height:110px;
-            max-width:110px;
+        margin: 8px;
+        max-height:110px;
+        max-width:110px;
     }
 }
 
