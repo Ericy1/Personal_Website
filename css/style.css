@@ -224,11 +224,11 @@ nav #logo img {
     font-family: Source Sans Pro ExtraLight, 'Calibri Light';
 }
 
-@media(min-width: 1030px) {
+@media(min-width: 1031px) {
     #scrollSection {
-        height: 83vh;
+        height: 90h;
     }
-    #scrollSection p1{
+    #scrollSection #textP {
         font-size: calc(0.05vw + 1.1vh + 1.8vmin);
     }
 }
@@ -236,7 +236,7 @@ nav #logo img {
     #scrollSection h1 {
         font-size: 28px;
     }
-    #scrollSection p1{
+    #scrollSection #textP {
         font-size: 20px;
     }
 }
@@ -434,7 +434,7 @@ input[type="submit"]:hover{
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 22px;
 }
 #about p1 {
     display: flex;
